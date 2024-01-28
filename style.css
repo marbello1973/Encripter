@@ -1,0 +1,232 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: #ffffff;
+}
+
+nav {
+    margin-top: 2em;
+    margin-left: 2em;
+}
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: row;
+    margin-top: 1em;    
+}
+
+.Imagen {
+    transition: all 0.5s ease-in-out;
+    
+}
+
+.containerTextarea {
+    width: 100%;
+    /* border: 1px solid #dd00d2; */
+    height: 600px;
+    padding: 1em;
+}
+
+.containerText{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #c9c9c9;
+    padding: 1em;
+    border-radius: 6px;
+    transition: all 0.5s ease-in-out;
+}
+
+.TextArea {
+    width: 30em;
+    height: 550px;
+    margin-top: 1em;    
+    border: none;
+    padding: 6px;   
+    outline: none;    
+    font-size: 18px;  
+    color: #355774; 
+    resize: none;
+    
+}
+
+.TextArea::placeholder {
+    color: #355774;    
+    text-transform: uppercase;    
+    opacity: 0.5;
+}
+
+.containerButton {
+    margin-top: 1em;
+    display: flex;
+    flex-direction: row;   
+    gap: 2em;
+    
+}
+
+.ButtonEncripter {
+    width: 10em;
+    height: 3em;
+    border: none;
+    outline: none;
+    background: rgba(10, 56, 113, 1);
+    color: #fff;
+    font-size: 18px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;    
+}
+
+.ButtonDecripter {
+    width: 10em;
+    height: 3em;
+    border: 1px solid rgba(10, 56, 113, 1);
+    outline: none;
+    background: rgba(216, 223, 232, 1);
+    color: rgba(10, 56, 113, 1);
+    font-size: 18px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+}
+
+.ButtonCopiar{
+    width: 10em;
+    height: 3em;
+    border: 1px solid rgba(10, 56, 113, 1);
+    outline: none;
+    background: rgba(216, 223, 232, 1);
+    color: rgba(10, 56, 113, 1);
+    font-size: 18px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+}
+
+.containerTextEncriptado{
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+    justify-content: center;
+    padding: 1em;
+    transition: all 0.5s ease-in-out;
+    border: 1px solid #c9c9c9;  
+    border-radius: 6px;  
+    width: 400px;
+    height: 700px;
+    margin: 0;
+    background: #fff;
+    box-shadow: 6px -2px 27px 4px rgba(0,0,0,0.59);
+    -webkit-box-shadow: 6px -2px 27px 4px rgba(0,0,0,0.59);
+    -moz-box-shadow: 6px -2px 27px 4px rgba(0,0,0,0.59);
+    
+}
+
+.containerResult {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 1em;  
+    word-wrap: break-word;
+    width: 100%;              
+    overflow: auto;
+    background: #fff;
+    
+    
+    
+    & span {           
+        font-size: 18px;
+        color: #355774;
+        text-align: center;
+        background: #fff;
+                
+        
+    }
+}
+
+
+
+
+@media (max-width: 768px) {
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        background: #d6d6d6;
+    }
+    nav {
+        text-align: center;
+    }
+    main {
+        flex-direction: column;
+    }  
+
+    .Imagen {
+        display: none;
+        visibility: hidden;
+        transition: all 0.5s ease-in-out;
+    }
+    
+    .containerTextEncriptado{
+        margin-top: 1em;        
+    }
+
+    .TextArea{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+        width: 20em;
+        height: auto;        
+        margin-top: 1em;
+    }
+
+    .containerTextarea {
+        display: flex;
+        justify-content: center;
+        width: 300px; 
+        margin: 0 auto;      
+        border: 1px solid #d8d8d8;
+        border-radius: 6px;
+        height: 300px;
+        padding: 1em;
+    }
+
+    .containerButton {
+        margin-top: 1em;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1em;
+    }
+
+    .containerTextEncriptado{
+        height: 250px;
+        width: 330px;       
+        box-shadow: 6px -2px 27px 4px rgba(0,0,0,0.59);
+        -webkit-box-shadow: 6px -2px 27px 4px rgba(0,0,0,0.59);
+        -moz-box-shadow: 6px -2px 27px 4px rgba(0,0,0,0.59);
+
+        & div {
+            margin-top: 1em;             
+            
+            & span {
+                font-size: 18px;
+                color: #355774;
+                text-align: center;
+                text-justify: distribute;                
+                
+                
+            }
+        }
+    }
+   
+}
+
+
+ 
